@@ -4,9 +4,6 @@
   margin: 10px;
   max-width: 800px;
 }
-#content {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: solid 10px #163be1;
-  background-color: #837ae9;
+.lamp1 {
+  max-width: 100px;
 }
