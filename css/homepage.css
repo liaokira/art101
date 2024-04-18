@@ -107,6 +107,21 @@ you can add them directly to the <div id="header"></div> element! */
   background-size: 100%;
 }
 
+#tat1  {
+  height: 40px;
+  width: 100%;
+}
+
+#tat2 {
+  height: 40px;
+  width: 100%;
+}
+
+#tat3 {
+  height: 40px;
+  width: 100%;
+}
+
 /* navigation section!! */
 #navbar {
   height: 40px;
