@@ -111,14 +111,17 @@ you can add them directly to the <div id="header"></div> element! */
 
 #tat1>button>img {
   width: 100px;
+  height:fit-content
 }
 
 #tat2>button>img {
   width: 100px;
+  height: fit-content;
 }
 
 #tat3>button>img {
   width: 100px;
+  height: fit-content;
 }
 
 
