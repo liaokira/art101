@@ -109,15 +109,15 @@ you can add them directly to the <div id="header"></div> element! */
   background-size: 100%;
 }
 
-#tat1>img {
+#tat1>button>img {
   width: 10px;
 }
 
-#tat2>img {
+#tat2>button>img {
   width: 10px;
 }
 
-#tat3>img {
+#tat3>button>img {
   width: 10px;
 }
 
