@@ -60,6 +60,8 @@ body {
   background-image: url(https://bettysgraphics.neocities.org/images/backgrounds/048C.jpg);
 }
 
+
+
 * {
   box-sizing: border-box;
 }
@@ -107,16 +109,16 @@ you can add them directly to the <div id="header"></div> element! */
   background-size: 100%;
 }
 
-#tat1  {
-  width: 100px;
+#tat1>img {
+  width: 10px;
 }
 
-#tat2 {
-  width: 100px;
+#tat2>img {
+  width: 10px;
 }
 
-#tat3 {
-  width: 100px;
+#tat3>img {
+  width: 10px;
 }
 
 
