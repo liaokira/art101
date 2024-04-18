@@ -108,19 +108,17 @@ you can add them directly to the <div id="header"></div> element! */
 }
 
 #tat1  {
-  height: 40px;
-  width: 100%;
+  width: 100px;
 }
 
 #tat2 {
-  height: 40px;
-  width: 100%;
+  width: 100px;
 }
 
 #tat3 {
-  height: 40px;
-  width: 100%;
+  width: 100px;
 }
+
 
 /* navigation section!! */
 #navbar {
