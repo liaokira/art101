@@ -1,21 +1,17 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// lab 7 - functions
+// Author: syd young
+// Date: may 2, 2024
+let userName = window.prompt()
 
-// Constants
-
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+function wordyTime() {
+    return userName.split("").sort().join("");
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
+document.writeln(wordyTime())
+
+
+function anagramyTime() {
+    return userName.split("").sort().join("");
 }
 
-// let's get this party started
-main();
+document.writeln(wordyTime()) 
