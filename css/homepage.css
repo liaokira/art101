@@ -24,7 +24,9 @@ If you download a font file you can upload it onto your Neocities
 and then link it! Many fonts have separate files for each style
 (bold, italic, etc. T_T) which is why there are so many!
 
-*/
+
+cursor shit*/ 
+     
 
 @font-face {
   font-family: Nunito;
@@ -58,8 +60,9 @@ body {
   background-size: 65px;
   color: #fceaff;
   background-image: url(https://bettysgraphics.neocities.org/images/backgrounds/048C.jpg);
-}
+  cursor:url("https://ita.toys/links/apple.gif"), auto;}
 
+a, a:hover { cursor: url("https://ita.toys/links/apple2.png"), auto;}
 
 
 * {
