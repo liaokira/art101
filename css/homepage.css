@@ -101,7 +101,7 @@ text-decoration:none; */
   width: 100%;
   background-color: #5e4e8c;
   /* header color here! */
-  height: 150px;
+  height: 160px;
   /* this is only for a background image! */
   /* if you want to put images IN the header, 
 you can add them directly to the <div id="header"></div> element! */
@@ -127,7 +127,9 @@ you can add them directly to the <div id="header"></div> element! */
 
 /* navigation section!! */
 #navbar {
-  height: 40px;
+  height: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: #13092D;
   /* navbar color */
   width: 100%;
@@ -144,6 +146,9 @@ you can add them directly to the <div id="header"></div> element! */
 #navbar li {
   padding-top: 10px;
 }
+
+
+
 
 /* navigation links*/
 #navbar li a {
