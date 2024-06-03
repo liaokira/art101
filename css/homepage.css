@@ -99,6 +99,22 @@ EXCEPT for the navigation */
 you can add a line below here that says:
 text-decoration:none; */
 }
+#splashscreen {
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  width: 100%;
+  text-align: center; 
+  background-image: url(https://64.media.tumblr.com/8bfad778af389e463e20dd287950ce05/e941d8c69a07f165-0f/s75x75_c1/bc646a284f9fa3d5391b9a5d83b44cf7112ad5e5.gifv);
+}
+
+#enterButton {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 #header {
   width: 100%;
@@ -126,7 +142,6 @@ you can add them directly to the <div id="header"></div> element! */
   width: 100px;
   height: fit-content;
 }
-
 
 /* navigation section!! */
 #navbar {
