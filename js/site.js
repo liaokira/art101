@@ -1,3 +1,7 @@
-$('.enter_link').click(function () {
-  $(this).parent('#splashscreen').fadeOut(500);
-});
+var splashScreen = document.querySelector('.splash');
+splashScreen.addEventListener('click',()=>{
+  splashScreen.style.opacity = 0;
+  setTimeout(()=>{
+    splashScreen.classList.add('hidden')
+  },610)
+})

@@ -1,0 +1,62 @@
+
+
+
+
+body {
+    background-image: url(https://sadhost.neocities.org/images/tiles/comp009.jpg); /* The image used for background*/
+    background-position: center; /* Center the image */
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image-container {
+  text-align: right;
+  width: 100%;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/fishbg.png");
+  margin-left: 40%;
+  margin-right: 40%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+}
+
+#labLinkTime {
+  display: inline-block;
+  padding: 5px 10px; /* Adjust padding as needed */
+  background-color: pink;
+  border-radius: 5px; /* Adjust border-radius as needed */
+  margin: 5px; /* Adjust margin as needed for spacing */
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Change link color */
+}
+
+#back-link-container {
+  background-color: rgb(197, 48, 73); /* Pink background color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Padding inside the container */
+  display: inline-block; /* Ensure the container wraps around the link */
+}
+
+.welcome{
+  background-color: rgb(199, 106, 122); /* Pink background color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Padding inside the container */
+  /* display: inline-block; Ensure the container wraps around the link */
+  text-align: center;
+}
+

@@ -99,14 +99,52 @@ EXCEPT for the navigation */
 you can add a line below here that says:
 text-decoration:none; */
 }
-#splashscreen {
-  position:absolute;
-  top:0;
-  left:0;
-  bottom:0;
-  width: 100%;
-  text-align: center; 
-  background-image: url(https://64.media.tumblr.com/8bfad778af389e463e20dd287950ce05/e941d8c69a07f165-0f/s75x75_c1/bc646a284f9fa3d5391b9a5d83b44cf7112ad5e5.gifv);
+.container{
+  background-color: rgba(100,201,154);
+  padding : 20px;
+  margin : 50px auto;
+  border : 2px solid white;
+  display : grid;
+  width : 70%;
+}
+.splash{
+  cursor : pointer;
+  position : fixed;
+  top : 50%;
+  left : 50%;
+  height : 95%;
+  width : 95%;
+  transform : translate(-50%,-50%);    
+  background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHZlNW5mbWMxOWwxZTFyZnNhOW85NzZscHoxNHFjMmR3d2h6eXc2ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/G8dfYJy1CFsLS/giphy.webp");
+  background-size:cover;
+  transition : all ease-in-out 600ms;
+}
+.hidden{
+  transition : 0.5s;
+  display : none;
+}
+.splash-header {
+  height : 90%;
+  color : rgba(224, 36, 162, 0.557);
+  font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size : 60px;
+  font-weight: bolder;
+  display : flex;
+  justify-content: center;
+  align-items : top;
+}
+
+body {
+  background-color: rgba(200,200,170);
+}
+
+.btn {
+/*   border : none; */
+/*   padding : 10px; */
+/*   position : fixed; */
+  z-index : -1;
+  left : 50%;
+  transform : translateX(-50%);
 }
 
 #enterButton {
