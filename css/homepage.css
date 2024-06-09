@@ -71,16 +71,6 @@ a, a:hover { cursor: url("https://ita.toys/links/apple2.png"), auto;}
 
 
 /* below this line is CSS for the layout */
-
-/* this is a CSS comment
-to uncomment a line of CSS, remove the * and the /
-before and after the text */
-
-
-/* the "container" is what wraps your entire website */
-/* if you want something (like the header) to be Wider than
-the other elements, you will need to move that div outside
-of the container */
 #container {
   max-width: 900px;
   /* this is the width of your layout! */
@@ -90,14 +80,9 @@ and change the media query according to the comment! */
   /* this centers the entire page */
 }
 
-/* the area below is for all links on your page
-EXCEPT for the navigation */
 #container a {
   color: #ED64F5;
   font-weight: bold;
-  /* if you want to remove the underline
-you can add a line below here that says:
-text-decoration:none; */
 }
 .container{
   background-color: rgba(100,201,154);
@@ -173,19 +158,34 @@ you can add them directly to the <div id="header"></div> element! */
   background-size: 100%;
 }
 
-#tat1>button>img {
-  width: 100px;
-  height:fit-content
+#pokemon {
+  width:50px;
+  padding-top: 7px;
 }
 
-#tat2>button>img {
+#tat1>img {
   width: 100px;
-  height: fit-content;
+  height:fit-content;
+
+  border-color: #5e4e8c;
+  border-width: 5px;
+  border-style: dotted;
 }
 
-#tat3>button>img {
+#tat2>img {
   width: 100px;
   height: fit-content;
+  border-color: #5e4e8c;
+  border-width: 5px;
+  border-style: dotted;
+}
+
+#tat3>img {
+  width: 100px;
+  height: fit-content;
+  border-color: #5e4e8c;
+  border-width: 5px;
+  border-style: dotted;
 }
 
 /* navigation section!! */
@@ -194,7 +194,6 @@ you can add them directly to the <div id="header"></div> element! */
   padding-left: 10px;
   padding-right: 10px;
   background-color: #13092D;
-  /* navbar color */
   width: 100%;
 }
 
@@ -209,8 +208,6 @@ you can add them directly to the <div id="header"></div> element! */
 #navbar li {
   padding-top: 10px;
 }
-
-
 
 
 /* navigation links*/
