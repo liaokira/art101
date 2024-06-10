@@ -92,33 +92,6 @@ and change the media query according to the comment! */
   display : grid;
   width : 70%;
 }
-.splash{
-  cursor : pointer;
-  position : fixed;
-  top : 50%;
-  left : 50%;
-  height : 95%;
-  width : 95%;
-  transform : translate(-50%,-50%);    
-  background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXZjNnBqMWMzbXlva3hzdDl4dTZzbWVncmp6cXhnMTI2bG15cmNoayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKVaf0pflGFzlzW/giphy.webp");
-  background-size:cover;
-  transition : all ease-in-out 600ms;
-}
-.hidden{
-  transition : 0.5s;
-  display : none;
-}
-.splash-header {
-  height : 90%;
-  color : rgb(162, 22, 157);
-  font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size : 60px;
-  font-weight: bolder;
-  display : flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 50px;
-}
 
 #dance {
   max-width: 410px;
@@ -139,12 +112,13 @@ body {
   transform : translateX(-50%);
 }
 
-#enterButton {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+#teeth {
+  position: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 10px;
 }
+
 
 #header {
   width: 100%;
