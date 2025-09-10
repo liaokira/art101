@@ -1,0 +1,130 @@
+/* you can control the aesthetics of the about page by changing 
+the variables below in this :root class*/
+:root {
+  --bg-image: url('https://bettysgraphics.neocities.org/images/backgrounds/pattern%20568.gif');
+
+  --font: 'Nunito', sans-serif;
+  --font-color: #f8bffb;
+
+  --header-font: Georgia, 'Times New Roman', Times, serif;
+  --header-color: #ED64F5;
+
+  --link-color: #ED64F5;
+  
+  --box1-color: #43256E;
+  --box2-color: #241445;
+
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+html{
+  background-image: var(--bg-image);
+  background-size: 65px;
+  cursor:url("https://ita.toys/links/apple.gif"), auto;
+
+  font-family: var(--font);
+  color: var(--font-color);
+  font-weight: bold;
+}
+
+h1,h2,h3 {
+  color: var(--header-color);
+  font-family: var(--header-font);
+}
+
+h1 {
+  font-size: 25px;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  
+}
+
+strong {
+  /* this styles bold text */
+  color: #ED64F5;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:hover { 
+    cursor: url("https://ita.toys/links/apple2.png"), auto;
+    text-decoration: underline;
+}
+
+#container{
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+
+}
+
+#containerLeft{
+    width: 500px;
+    display:flex;
+    flex-direction: column;
+}
+
+#containerRight{
+    width: 300px;
+    margin-left: 20px;
+    display:flex;
+    flex-direction: column;
+}
+
+#dance{
+    width:500px;
+}
+
+#box1{
+  background-color: var(--box1-color);
+  padding: 30px;
+}
+
+#box2{
+  background-color: var(--box2-color);
+  padding: 30px;
+}
+
+#teeth{
+    text-align:center;
+}
+
+#interestingimage{
+    text-align:center;
+    margin:20px;
+}
+
+.box {
+  margin:10px;
+  background-color: #13092D;
+  border: 1px solid #ED64F5;
+  padding: 25px;
+  margin-bottom: 20px;
+}
