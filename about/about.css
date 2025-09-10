@@ -50,6 +50,12 @@ html{
   font-weight: bold;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+}
+
 h1,h2,h3 {
   color: var(--header-color);
   font-family: var(--header-font);
@@ -80,26 +86,30 @@ a:hover {
     margin: auto;
     margin-top: 20px;
     padding: 20px;
-    display:flex;
+    display: flex;
     justify-content: center;
-
+    max-width: 1200px;
+    gap: 20px;
 }
 
 #containerLeft{
-    width: 500px;
-    display:flex;
+    flex: 2;
+    max-width: 500px;
+    display: flex;
     flex-direction: column;
 }
 
 #containerRight{
-    width: 300px;
-    margin-left: 20px;
-    display:flex;
+    flex: 1;
+    max-width: 300px;
+    display: flex;
     flex-direction: column;
 }
 
 #dance{
-    width:500px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 #box1{
@@ -127,4 +137,122 @@ a:hover {
   border: 1px solid #ED64F5;
   padding: 25px;
   margin-bottom: 20px;
+}
+
+/* Make images in teeth section responsive */
+#teeth img {
+  max-width: 100%;
+  height: auto;
+}
+
+#interestingimage img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Design */
+
+/* Tablet (600px to 767px) */
+@media only screen and (max-width: 767px) {
+  #container {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  #containerLeft, #containerRight {
+    flex: none;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  #dance {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  #box1, #box2 {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  #teeth {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #teeth img {
+    max-width: 45%;
+    flex: 1;
+  }
+}
+
+/* Mobile (480px and below) */
+@media only screen and (max-width: 480px) {
+  #container {
+    padding: 10px;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  
+  #box1, #box2 {
+    padding: 15px;
+    margin: 5px;
+  }
+  
+  .box {
+    padding: 15px;
+    margin: 5px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  h3 {
+    font-size: 16px;
+  }
+  
+  #teeth {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  #teeth img {
+    max-width: 80%;
+  }
+  
+  #interestingimage {
+    margin: 10px;
+  }
+  
+  ul {
+    padding-left: 15px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
 }

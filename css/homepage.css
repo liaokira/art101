@@ -49,6 +49,7 @@ html{
 body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll on mobile */
 }
 
 a:hover { 
@@ -72,6 +73,7 @@ and change the media query according to the comment! */
   /* this centers the entire page */
   color: var(--font-color);
   font-weight: bold;
+  padding: 0 10px; /* Add padding for mobile */
 }
 
 #container a{
@@ -90,6 +92,20 @@ and change the media query according to the comment! */
   background-color: #13092D;
   border: 1px solid #ED64F5;
   margin-bottom: 20px;
+  padding: 20px;
+}
+
+.box ul {
+  list-style-type: '★  ';
+  margin:0;
+  padding:5px;
+
+}
+
+.box ul li {
+  margin:5px;
+  margin-bottom:0px;
+  margin-top:0px;
 }
 
 .btn {
@@ -161,8 +177,9 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
 }
 
 #collage {
-  max-width: 700px;
-
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 footer {
@@ -202,6 +219,7 @@ strong {
   padding: 10px;
   font-size: smaller;
   background-color: var(--marquis-color);
+  overflow: hidden; /* Prevent overflow on small screens */
 }
 
 #tat1 {
@@ -226,24 +244,27 @@ and then subtrack it by 100. use this new number as the
 "max-width" value below
 */
 
+/* Tablet styles */
 @media only screen and (max-width: 800px) {
+  
   #flex {
     flex-wrap: wrap;
   }
 
-aside {
-  width: 100%;
-}
+  aside {
+    width: 100%;
+    padding: 15px;
+  }
 
-ul {
-  margin:0;
-}
+  ul {
+    margin: 0;
+  }
 
   /* the order of the items is adjusted here for responsiveness!
-since the sidebars would be too small on a mobile device.
-feel free to play around with the order!
-*/
-  main {
+  since the sidebars would be too small on a mobile device.
+  feel free to play around with the order!
+  */
+  #main {
     order: 1;
   }
 
@@ -255,8 +276,132 @@ feel free to play around with the order!
     order: 3;
   }
 
+  #welcome {
+    padding: 15px;
+  }
+
   #navbar ul {
     flex-wrap: wrap;
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  
+  #topBar {
+    font-size: 12px;
+  }
+  
+  #topBar marquee {
+    font-size: 11px;
+  }
+  
+  aside {
+    font-size: 14px;
+  }
+
+  .box ul {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  #welcome {
+    padding: 15px 10px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  #buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  #buttons img {
+    max-width: 80px;
+    height: auto;
+  }
+  
+  #pokemon {
+    width: 40px;
+  }
+  
+  footer {
+    padding: 8px 5px;
+    font-size: 12px;
+    height: auto;
+    min-height: 30px;
+  }
+}
+
+/* Extra small mobile */
+@media only screen and (max-width: 400px) {
+  #container {
+    padding: 0 5px;
+  }
+  
+  .box ul {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+
+  #topBar {
+    padding: 3px;
+    font-size: 10px;
+  }
+  
+  aside {
+    padding: 8px;
+    font-size: 13px;
+  }
+  
+  #welcome {
+    padding: 10px 8px;
+  }
+  
+  h1 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+  
+  h2 {
+    font-size: 16px;
+  }
+  
+  #buttons img {
+    max-width: 70px;
+  }
+  
+  #pokemon {
+    width: 35px;
+  }
+  
+  footer {
+    font-size: 10px;
+    padding: 5px;
   }
 }
 
