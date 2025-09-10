@@ -88,7 +88,7 @@ Example:
    "title": "Digital Art Compilation"
 }
 ```
-Add another one of these entry guys to the end of the section you want to add it to. Paste the path into the "path" field and type the title into the "title" field. 
+Add another one of these entry guys to the end of the section you want to add it to. Paste the image path into the "path" field and type the title into the "title" field. 
 
 ## Customizing CSS
 - Go into any of the folders (ex. /portfolio, /about...) Find the CSS file. At the top of the files, there should be some variables within the :root css class. You can toggle the colors and change background images from there, and it should apply to the rest of the page.
