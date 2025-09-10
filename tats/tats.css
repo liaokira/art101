@@ -5,6 +5,8 @@ the variables below in this :root class*/
 
   --header-font: Georgia, 'Times New Roman', Times, serif;
   --header-color: #ED64F5;
+  --header-box-color: #d0fad6;
+  --font-color: #ED64F5;
 
   --border-color: #ED64F5;
 
@@ -68,4 +70,20 @@ a:hover {
     width: 300px;
     margin: 15px;
     border: 6px dotted var(--border-color);
+}
+
+#header{
+  background-color: var(--header-box-color);
+  padding: 10px;
+  border: 6px dotted var(--border-color);
+}
+
+#backbutton{
+  background-color: var(--header-box-color);
+  padding: 10px;
+  border: 6px dotted var(--border-color);
+  position:fixed;
+  bottom:30px;
+  left:30px;
+  color: var(--font-color);
 }

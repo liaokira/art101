@@ -24,6 +24,9 @@
         image.style.width = "300px";
         image.style.height = "300px";
         image.style.backgroundSize = "cover";
+        image.addEventListener("click", () => {
+          window.open(file.path, "_blank");
+        });
         twoDContainer.appendChild(image);
       });
 
@@ -34,6 +37,9 @@
         image.style.width = "300px";
         image.style.height = "300px";
         image.style.backgroundSize = "cover";
+        image.addEventListener("click", () => {
+          window.open(file.path, "_blank");
+        });
         threeDContainer.appendChild(image);
       });
 
@@ -44,6 +50,9 @@
         image.style.width = "300px";
         image.style.height = "300px";
         image.style.backgroundSize = "cover";
+        image.addEventListener("click", () => {
+          window.open(file.path, "_blank");
+        });
         digitalContainer.appendChild(image);
       });
     });
@@ -67,40 +76,39 @@ function openTab(evt, tab) {
 <body onload="openTab(event, 'twoD')">
 
 <div id="body-container">
-  <div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'twoD')">2D</button>
-  <button class="tablinks" onclick="openTab(event, 'threeD')">3D</button>
-  <button class="tablinks" onclick="openTab(event, 'digital')">Digital</button>
-  <button class="tablinks" onclick="openTab(event, 'commissions')">Commissions</button>
-</div>
-<div class="image-container">
+  <div class="content-wrapper">
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'twoD')">
+        <h3>2D</h3>
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'threeD')">
+        <h3>3D</h3>
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'digital')">
+        <h3>Digital</h3>
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'commissions')">
+        <h3>Commissions</h3>
+      </button>
+    </div>
+    <div class="image-container">
   <div id="twoD" class="tabcontent"></div>
   <div id="threeD" class="tabcontent"></div>
   <div id="digital" class="tabcontent"></div>
   <div id="commissions" class="tabcontent">
-    <div id="commissions">
-    <h1 id="header"><img src="https://64.media.tumblr.com/aea932de2c10842c164395e353057710/227ca944526be4dc-84/s75x75_c1/026654ecb892320b441a2b904055ef3d12b6fd4e.gifv">
-        COMMISSIONS
-        <img src="https://64.media.tumblr.com/aea932de2c10842c164395e353057710/227ca944526be4dc-84/s75x75_c1/026654ecb892320b441a2b904055ef3d12b6fd4e.gifv"></h1>
+    <div id="commissions-content">
+      <div id="commissions-header">
+      <img src="https://64.media.tumblr.com/aea932de2c10842c164395e353057710/227ca944526be4dc-84/s75x75_c1/026654ecb892320b441a2b904055ef3d12b6fd4e.gifv">
+      <h1>
+          COMMISSIONS
+      </h1>
+      <img src="https://64.media.tumblr.com/aea932de2c10842c164395e353057710/227ca944526be4dc-84/s75x75_c1/026654ecb892320b441a2b904055ef3d12b6fd4e.gifv"></h1>
+    </div>
       <p>Commissions are currently OPEN. To inqure, please e-mail <a id="email" href="mailto:syndeyy.2004@gmail.com">sydneyy.2004@gmail.com</a>.</p>
-  </div>
+    </div>
   </div>
 </div>
 </div>
-
-<!-- Slideshow container -->
-
-
-<!-- <section id="comissions">
-  <div >
-      <h1 id="header"><img src="https://64.media.tumblr.com/aea932de2c10842c164395e353057710/227ca944526be4dc-84/s75x75_c1/026654ecb892320b441a2b904055ef3d12b6fd4e.gifv">
-        COMMISSIONS
-        <img src="https://64.media.tumblr.com/aea932de2c10842c164395e353057710/227ca944526be4dc-84/s75x75_c1/026654ecb892320b441a2b904055ef3d12b6fd4e.gifv"></h1>
-      <p>Commissions are currently OPEN. To inqure, please e-mail <a id="email" href="mailto:syndeyy.2004@gmail.com">sydneyy.2004@gmail.com</a>.</p>
-
-  </div>
- </section> -->
-
  
  <div id="back-link-container">
   <a href="../index.html">go back </a>
